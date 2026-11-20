@@ -1,0 +1,102 @@
+{
+  "fecha": "2026-11-20",
+  "metodo_principal": "LogReg_todas",
+  "entrenamiento": {
+    "sesiones": 11,
+    "segundos": 1070,
+    "reposo": 523,
+    "contraccion": 547,
+    "sha256_csv_unido": "680e273c043165ded9fc0263fdf613e3b6e757c2f6e38e853462d1c2a7f32bce",
+    "sha256_segundos_calidad": "f9b9638942cca10107fe5019cfec8fd9209af67290bdbe4b5f1c0ccc3b1a8d76"
+  },
+  "modelos": {
+    "LogReg_todas": {
+      "columnas": [
+        "log_promedio",
+        "log_maximo",
+        "log_minimo",
+        "log_desviacion",
+        "max_sobre_prom",
+        "min_sobre_prom",
+        "cv"
+      ],
+      "escalado_media": [
+        4.886205,
+        5.23015,
+        4.380006,
+        2.969318,
+        1.469435,
+        0.669609,
+        0.219089
+      ],
+      "escalado_desv": [
+        0.965809,
+        1.099605,
+        0.84661,
+        1.636326,
+        0.491956,
+        0.23413,
+        0.218908
+      ],
+      "coeficientes": [
+        2.526944,
+        2.016358,
+        1.856384,
+        1.339947,
+        -0.696042,
+        -1.394537,
+        0.260699
+      ],
+      "intercepto": -0.103967,
+      "C": 1.0
+    },
+    "LogReg_sin_amplitud": {
+      "columnas": [
+        "max_sobre_prom",
+        "min_sobre_prom",
+        "cv"
+      ],
+      "escalado_media": [
+        1.469435,
+        0.669609,
+        0.219089
+      ],
+      "escalado_desv": [
+        0.491956,
+        0.23413,
+        0.218908
+      ],
+      "coeficientes": [
+        -0.21347,
+        -5.798493,
+        -2.088516
+      ],
+      "intercepto": 1.193596,
+      "C": 1.0
+    }
+  },
+  "Umbral_k_x_base": {
+    "k": 2.425,
+    "rango_optimo": [
+      1.75,
+      3.1
+    ],
+    "F1_entrenamiento": 1.0,
+    "base": "P20 de promedio_uv en CALIBRACION, segundo >= 2"
+  },
+  "Umbral_absoluto": {
+    "T_uv": 114.5,
+    "rango_optimo": [
+      95.0,
+      134.0
+    ],
+    "F1_entrenamiento": 1.0
+  },
+  "versiones": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit_learn": "1.9.1"
+  },
+  "sha256_pkl": "6c844db8177e4741add2ece77a72387025bacae4c85b982359ec77aa8ebd7094"
+}
