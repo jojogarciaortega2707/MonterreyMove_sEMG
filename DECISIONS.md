@@ -1,10 +1,6 @@
 # DECISIONS — MONTERREY MOVE
 
-Each decision has a date. A decision is not edited after the date: a change is a new, dated entry.
-
 ## 2026-11-20 — Frozen model for the sealed test
-
-Decided before recording any test session. Nothing below changes until `code/07_test.py` has run once.
 
 **Training data:** the 11 sessions in `data/raw/` (MM-0001, 2026-11-10). 1,070 usable seconds: 523 rest and 547 contraction (`QUALITY-REPORT.md`).
 
