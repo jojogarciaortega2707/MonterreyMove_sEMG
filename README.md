@@ -10,8 +10,8 @@ Project rules:
 
 | Member code | GitHub user | In charge of | AI tool |
 |---|---|---|---|
-| M01 | [TO COMPLETE] | [TO COMPLETE] | Claude Code |
-| M02 | [TO COMPLETE] | [TO COMPLETE] | Claude Code |
+| M01 | jojogarciaortega2707 | [TO COMPLETE] | Claude Code |
+| M02 | moky06| [TO COMPLETE] | Claude Code |
 | M03 | [TO COMPLETE] | [TO COMPLETE] | Claude Code |
 | M04 | [TO COMPLETE] | [TO COMPLETE] | Claude Code |
 
