@@ -13,7 +13,7 @@ Project rules:
 | M01 | jojogarciaortega2707 | Machine Learning Model and Validation | Claude Code & Vs Code |
 | M02 | moky06| Features Identification | Claude Code |
 | M03 | Diego01 | Data Cleaning | Claude Code & Vs Code |
-| M04 | Douglas 02| New Data Integration for Trials | Claude Code |
+| M04 | douglashermance-ui | New Data Integration for Trials | Claude Code |
 
 Every member has at least one commit. See the commit list of this repository.
 
