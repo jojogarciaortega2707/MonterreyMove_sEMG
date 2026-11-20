@@ -1,5 +1,4 @@
-# Data dictionary — MONTERREY MOVE (sEMG biofeedback)
-
+# Data dictionary — MONTERREY MOVE 
 Built from the real files of the project (11 sessions, patient MM-0001, 2026-11-10, exercise BRIDGING).
 Language of column names is kept exactly as in the files (mixed Spanish/English).
 
