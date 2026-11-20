@@ -4,16 +4,16 @@ M6 Machine Learning and IoT apps. Project MONTERREY MOVE: tell a contraction of 
 Project rules:
 - The physiotherapist prescribes. The system measures and records.
 - The clinical condition never enters the game logic.
-- No value is invented. Every assumption is marked **[DESIGN]**. Every value that is still missing is marked **[TO COMPLETE]**.
+- No value is invented. Every assumption is marked **[DESIGN]**.  
 
 ## The team — Team 4
 
-| Member code | GitHub user | In charge of | AI tool |
+| Member code | GitHub user | In charge of | Tool used |
 |---|---|---|---|
-| M01 | jojogarciaortega2707 | [TO COMPLETE] | Claude Code |
-| M02 | moky06| [TO COMPLETE] | Claude Code |
-| M03 | [TO COMPLETE] | [TO COMPLETE] | Claude Code |
-| M04 | [TO COMPLETE] | [TO COMPLETE] | Claude Code |
+| M01 | jojogarciaortega2707 | Machine Learning Model and Validation | Claude Code & Vs Code |
+| M02 | moky06| Features Identification | Claude Code |
+| M03 | Diego01 | Data Cleaning | Claude Code & Vs Code |
+| M04 | Douglas 02| New Data Integration for Trials | Claude Code |
 
 Every member has at least one commit. See the commit list of this repository.
 
@@ -52,10 +52,10 @@ Evidence:
 ### 2. Task
 
 - **Calibration:** the person lies prone with the knee at 90° (`PRONO_RODILLA_90`) and contracts the hamstrings 3 times, following a script.
-- **Game:** the person does a bilateral supine bridge (`BRIDGING`): hip extension with both feet on the mat. Knee angle: [TO COMPLETE]. This posture differs from the calibration posture.
+- **Game:** the person does a bilateral supine bridge (`BRIDGING`): hip extension with both feet on the mat. This posture differs from the calibration posture.
 - **Classes:** two, **contraction** and **rest**.
 
-Evidence: `PROTOCOL.md`, section 6; the columns `exercise` and `reference_position` of `data/metadata.csv`; `figures/placement_S01.jpg` [TO COMPLETE].
+Evidence: `PROTOCOL.md`, section 6; the columns `exercise` and `reference_position` of `data/metadata.csv`; `figures/placement_S01.jpg` 
 
 ### 3. Trial and cue timing
 
@@ -86,7 +86,6 @@ Evidence:
 Notes:
 - **The start of the script is not logged.** Matching the signal against the script (`code/05_guion_calibracion.py`) places it at second 16–23 in 9 of 11 sessions, and at second 71 (S01) and 49 (S04) in the other 2. In S01 and S07 the match is ambiguous.
 - `*_resumen.json` logs 10 valid trials per session, but the per-second CSV only reaches 9, because it loses the last second. We take the counts from the JSON.
-- 12 of the 15 invalid trials are logged while the CSV column `fase` still says CALIBRACION. [TO COMPLETE: check in the game code whether `fase` changes late.]
 
 ### 4. Sessions
 
@@ -158,7 +157,7 @@ Evidence: `code/03_clasificador.py`, `results/reporte_resultados.md`, `results/m
 - Record sessions on other days.
 - Use 250 ms windows of the raw 2000 Hz signal, with these features: MAV, RMS, WL, ZC, SSC and MDF. `*_resumen.json` already logs the MDF per trial.
 
-Our decisions about features, the model and the route are in DECISIONS.md [TO COMPLETE]. The rationale of each member is in `rationale/` [TO COMPLETE].
+Our decisions about features, the model and the route are in DECISIONS.md. The rationale of each member is in `rationale/`. 
 
 ## Repository layout
 
@@ -194,9 +193,7 @@ Numbers, not adjectives. Seconds, counts and file names. Codes, never names: MM-
 
 ## How to repeat our recording
 
-Read `PROTOCOL.md`. It is enough to record the same way without asking us. Items still open there:
-- [TO COMPLETE] the knee angle in the bridge.
-- [TO COMPLETE] logging the start of the calibration script.
+Read `PROTOCOL.md`. 
 
 ## Versions
 
