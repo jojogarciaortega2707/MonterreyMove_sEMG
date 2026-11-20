@@ -1,7 +1,5 @@
 # PROTOCOL — MONTERREY MOVE sEMG recording
 
-Read this file to record the same way without asking us. Values reported by the team are marked (team). Values measured from the files are marked (data). Missing values are marked [TO COMPLETE].
-
 ## 1. Participant
 
 - 1 healthy adult, code **MM-0001**. Identity withheld for privacy (team).
@@ -101,13 +99,12 @@ The app derives these thresholds for each session from calibration (data, `*_res
 | 24–30 | rest | REST |
 | 31–35 | trial 3, contract | CONTRACTION |
 
-4. **Game:** the bridge exercise (`BRIDGING`): bilateral supine bridge, with hip extension and both feet on the mat. This posture differs from the calibration posture (prone, knee at 90°). Knee angle during the bridge: [TO COMPLETE]. A trial is valid when the contraction stays in the target zone for at least **1.0 s** (`t_sosten_minimo_s`). The session ends after **10 valid trials**. Measured (data): 10–13 trials per session, a median of 3 s between valid trials, and 35.5–45.1 s of game.
+4. **Game:** the bridge exercise (`BRIDGING`): bilateral supine bridge, with hip extension and both feet on the mat. This posture differs from the calibration posture (prone, knee at 90°). A trial is valid when the contraction stays in the target zone for at least **1.0 s** (`t_sosten_minimo_s`). The session ends after **10 valid trials**. Measured (data): 10–13 trials per session, a median of 3 s between valid trials, and 35.5–45.1 s of game.
 5. Save. The app writes `<id>_senal_cruda.npy`, `<id>_por_segundo.csv` and `<id>_resumen.json`. The time in the file name is the save time, that is, the end of the session.
 
 **Known gaps:**
 - The start of the calibration script is not logged. `code/05_guion_calibracion.py` finds it by matching the signal: it starts at second 16–23 of the session in 9 of 11 sessions, and at second 71 (S01) and 49 (S04) in the other 2. In S01 and S07 the match is ambiguous.
 - The calibration phase in the CSV lasts 58–135 s, longer than the 36 s script.
-- [TO COMPLETE: log the start of the script and of each instruction in the CSV, so the script can give labels that do not depend on amplitude.]
 
 ## 7. Files produced per session
 
