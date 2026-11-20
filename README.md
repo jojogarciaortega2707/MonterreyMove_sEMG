@@ -23,7 +23,7 @@ We measure one healthy team member. We do not say which one, for privacy. In the
 
 ### 1. Data acquisition
 
-**11 recordings, 125 game trials, 33 calibration trials, 11 sessions, 1 person.**
+**11 recordings, 110 game trials, 44 calibration trials, 1 person.**
 
 - **Sensor:** one sEMG channel on the **right semitendinosus**.
   - Bipolar pre-gelled Ag/AgCl electrodes, 2 cm apart.
