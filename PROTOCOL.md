@@ -36,8 +36,6 @@ Signal chain: electrodes → pre-amplifier → band-pass → notch → post-ampl
 
 Analog bandwidth: 20–477 Hz.
 
-**Corrected:** the hardware sheet listed the 20 Hz cut-off as "low pass" and 477 Hz as "high pass". For a 20–477 Hz band, the 20 Hz filter must be the high-pass and the 477 Hz filter the low-pass, so the table above uses that order.
-
 **Check:**
 - The stored signal is bipolar (−2,208 to +3,848 µV), so it is not rectified after conversion. The offset is removed in software (section 4).
 - The hardware offset is +1 V (team). The software does not use a fixed value: it estimates the offset from 1.5 s of rest (section 4).
@@ -54,8 +52,6 @@ Analog bandwidth: 20–477 Hz.
 | Resolution | **5.6433 µV per count** at the electrodes. Checked in the data: every value of the 11 `.npy` files sits on a grid of exactly 5.6433 µV. This confirms the 12-bit count, the 3.3/4095 scale and the gain of 142.8 used in the software, which matches the gain on the board (section 3) |
 | Range used | 396–687 distinct levels per session; the signal spans 536–1,067 counts out of 4,096. The effective resolution of the internal ESP32 ADC is ≈ 9–10 bits (team) |
 | Stored unit | µV, float32 (`*_senal_cruda.npy`), before any digital filter |
-
-The hardware sheet says "1 kHz sampling rate". The stored data are at 2000 Hz. The sheet must be corrected.
 
 **Limitation:** an earlier report described an external MCP3208 ADC. This prototype uses the internal ESP32 ADC, which is noisier and less linear: ≈ 9–10 effective bits.
 
