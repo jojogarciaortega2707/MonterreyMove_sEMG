@@ -15,7 +15,7 @@ This report documents the use of AI tools throughout the project, including the 
 | M03 | Diego01 | Data Cleaning | Claude Code & Vs Code |
 | M04 | douglashermance-ui | New Data Integration for Trials | Claude Code |
 
-Every member has at least one commit. All done from M01 user. 
+Every member has at least one commit. All done from M01 user computer. 
 
 ## 2. Supporting Evidence
 
