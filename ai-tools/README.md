@@ -6,16 +6,14 @@ This report documents the use of AI tools throughout the project, including the 
 
 ---
 
-## 1. Team AI Tools & Evidence
+## 1. Team AI Tools 
 
-The following table summarizes the AI tools used by each team member and the corresponding project sections addressed during their sessions.
-
-| Member Code | AI Tool Used | Project Section / Topic | Evidence |
-|:---:|:---:|:---|:---:|
-| M01 | Claude | Parts 1–6 | `M01.png` |
-| M02 | Claude | Parts 1–6 | `M02.png` |
-| M03 | Claude | Parts 1–6 | `M03.png` |
-| M04 | Claude | Parts 1–6 | `M04.png` |
+|| Member code | GitHub user | In charge of | Tool used |
+|---|---|---|---|
+| M01 | jojogarciaortega2707 | Machine Learning Model and Validation | Claude Code & Vs Code |
+| M02 | moky06| Features Identification | Claude Code |
+| M03 | Diego01 | Data Cleaning | Claude Code & Vs Code |
+| M04 | douglashermance-ui | New Data Integration for Trials | Claude Code |
 
 ## 2. Supporting Evidence
 
