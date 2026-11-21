@@ -15,8 +15,6 @@ Project rules:
 | M03 | Diego01 | Data Cleaning | Claude Code & Vs Code |
 | M04 | douglashermance-ui | New Data Integration for Trials | Claude Code |
 
-Every member has at least one commit. See the commit list of this repository.
-
 We measure one healthy team member. We do not say which one, for privacy. In the data that person has the code **MM-0001**, and the physiotherapist has the code **FT-01**.
 
 ## The six parts
