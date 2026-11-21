@@ -19,6 +19,6 @@ Every member has at least one commit. All done from M01 user.
 
 ## 2. Supporting Evidence
 
-Screenshots documenting the AI interactions are included as supporting evidence. Each image corresponds to the team member identified in Section 1.
+Screenshots documenting the AI interactions are included as supporting evidence. Each image corresponds to the team member identified before. 
 
  
