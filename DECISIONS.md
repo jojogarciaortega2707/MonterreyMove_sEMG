@@ -28,9 +28,4 @@ Game seconds are not evaluated: their only label would be the threshold again.
 
 **Metrics reported:** sensitivity, specificity and F1 per session, per day and over all test seconds, with the confusion matrix. All four methods are reported, whatever the result.
 
-**Success criterion:** [TO COMPLETE before recording the first test session.]
 
-## Other decisions
-
-- Features, model and route: [TO COMPLETE]
-- Rationale of each member: `rationale/` [TO COMPLETE]
