@@ -1,0 +1,32 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+# Sealed test in Azure. The test sessions exist ONLY in the data asset
+# "mm-test-sellado" (Azure storage); they never reach GitHub or a laptop.
+# The job does not train anything: it loads the model frozen on 2026-11-20,
+# checks its hash, and reports. Run it ONCE. The job history (date, code
+# snapshot, data asset version) is the audit trail.
+#
+#   az ml job create -f realtime/azure/job_test_sellado.yml --stream
+#
+display_name: mm-test-sellado
+experiment_name: monterrey-move
+description: Sealed test of the frozen LogReg_todas model + real-time path, on new electrode placements.
+code: ../..                      # repository root; .amlignore leaves out raw training signals
+command: >-
+  python realtime/azure/verificar_separacion.py ${{inputs.test}} &&
+  python code/07_test.py ${{inputs.test}} ${{outputs.resultados}}/test &&
+  python realtime/rt_evaluar.py ${{inputs.test}}/raw ${{outputs.resultados}}/realtime
+  --guion ${{inputs.test}}/guion_inicio.csv &&
+  python realtime/azure/verificar_criterios.py ${{outputs.resultados}} --test ${{inputs.test}}
+  --min-sesiones 4 --umbral 0.75
+inputs:
+  test:
+    type: uri_folder
+    path: azureml:mm-test-sellado@latest
+    mode: ro_mount               # read-only: the job cannot change the test data
+outputs:
+  resultados:
+    type: uri_folder
+environment:
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu22.04:latest
+  conda_file: conda.yml
+compute: azureml:cpu-mm

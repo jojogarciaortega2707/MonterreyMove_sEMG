@@ -1,0 +1,14 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+# A managed online deployment bills every hour it exists, even idle.
+# Delete it after the demo:  az ml online-endpoint delete -n mm-semg-tiempo-real --yes
+name: congelado
+endpoint_name: mm-semg-tiempo-real
+model: azureml:mm-logreg-congelado@latest      # registered from models/ (see realtime/README.md)
+code_configuration:
+  code: ../../..                                # repository root (.amlignore applies)
+  scoring_script: realtime/azure/endpoint/score.py
+environment:
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu22.04:latest
+  conda_file: ../conda.yml
+instance_type: Standard_DS2_v2
+instance_count: 1
